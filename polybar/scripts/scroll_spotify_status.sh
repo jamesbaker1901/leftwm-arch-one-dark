@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# credit: https://github.com/PrayagS/polybar-spotify
+
 # see man zscroll for documentation of the following parameters
 ps aux | grep "/opt/spotify/spotify" | grep -v grep && zscroll -l 18 \
         --delay 0.1 \
