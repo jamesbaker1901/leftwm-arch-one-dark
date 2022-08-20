@@ -43,22 +43,3 @@ do
   monitor=$monitor polybar -c config.ini main &> /tmp/polybar.log &
 done
 
-if [ -x "$(command -v blueberry-tray)"]; then
-  ps aux | grep blueberry-tray | grep -v grep > /dev/null || blueberry-tray &
-fi
-
-# set up monitors
-xrandr --output eDP-1 --mode 1920x1200
-
-if xrandr | grep "HDMI-1 connected" > /dev/null; then
-  xrandr --output HDMI-1 --mode 2560x1440 --right-of eDP-1
-fi
-
-WORKMODE=$(cat ~/.workmode)
-
-# launch stuff for work, but only if it's not already running, and only if ~/.workmode == on
-if [[ $WORKMODE == "on" ]]; then
-  ps aux | grep "slack" | grep -v grep > /dev/null || slack &
-  ps aux | grep "zoom" | grep -v grep > /dev/null || zoom &
-  ps aux | grep "gpclient" | grep -v grep > /dev/null || gpclient &
-fi
