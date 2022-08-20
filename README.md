@@ -1,6 +1,6 @@
-# LeftWM themes - one-dark-arch
+# LeftWM themes - arch-one-dark
 
-![](https://github.com/jamesbaker1901/leftwm-arch-one-dark/raw/master/screenshot.png)
+![](https://github.com/jamesbaker1901/leftwm-arch-one-dark/blob/main/screenshot.png?raw=true)
 
 A simple polybar theme for leftwm based on the one-dark color scheme.
 
