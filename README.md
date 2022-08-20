@@ -17,7 +17,7 @@ Install them with:
 ```
 $ sudo pacman -S picom dunst polybar playerctl
 
-# you can build the spotiy package from the AUR manually, or just use an AUR helper like yay
+# you can build the spotify package from the AUR manually, or just use an AUR helper like yay
 
 $ yay -S spotify
 ```
